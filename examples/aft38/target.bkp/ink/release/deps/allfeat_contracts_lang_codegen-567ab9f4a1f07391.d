@@ -1,0 +1,12 @@
+/Users/gilles/allfeat-contracts/allfeat-contracts/examples/aft34_extensions/aft38/target/ink/release/deps/allfeat_contracts_lang_codegen-567ab9f4a1f07391.rmeta: /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/lib.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/contract.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementation.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementations.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/internal.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/metadata.rs
+
+/Users/gilles/allfeat-contracts/allfeat-contracts/examples/aft34_extensions/aft38/target/ink/release/deps/liballfeat_contracts_lang_codegen-567ab9f4a1f07391.rlib: /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/lib.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/contract.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementation.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementations.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/internal.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/metadata.rs
+
+/Users/gilles/allfeat-contracts/allfeat-contracts/examples/aft34_extensions/aft38/target/ink/release/deps/allfeat_contracts_lang_codegen-567ab9f4a1f07391.d: /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/lib.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/contract.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementation.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementations.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/internal.rs /Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/metadata.rs
+
+/Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/lib.rs:
+/Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/contract.rs:
+/Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementation.rs:
+/Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/implementations.rs:
+/Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/internal.rs:
+/Users/gilles/allfeat-contracts/allfeat-contracts/lang/codegen/src/metadata.rs:

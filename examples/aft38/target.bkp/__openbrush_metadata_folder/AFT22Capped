@@ -1,0 +1,1 @@
+"pub trait AFT22Capped\n{\n    #[doc = \" Returns the token\\'s cap\"] #[ink(message)]\n    #[ink(selector = 823998464u32)] fn cap(& self) -> Balance ;\n}"

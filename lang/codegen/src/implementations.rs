@@ -1078,6 +1078,78 @@ pub(crate) fn impl_aft34_uri_storage(impl_args: &mut ImplArgs) {
     impl_args.items.push(syn::Item::Impl(uri_storage));
 }
 
+
+
+
+pub(crate) fn impl_aft34_album_storage(impl_args: &mut ImplArgs) {
+    let storage_struct_name = impl_args.contract_name();
+    let internal_impl = syn::parse2::<syn::ItemImpl>(quote!(
+        impl album_storage::InternalImpl for #storage_struct_name {}
+    ))
+    .expect("Should parse");
+
+    let mut internal = syn::parse2::<syn::ItemImpl>(quote!(
+        impl album_storage::Internal for #storage_struct_name {
+            fn _emit_attribute_set_event(&self, token_id: Id, token_album: ALBUMID) {
+                album_storage::InternalImpl::_emit_attribute_set_event(self, token_id, token_album)
+            }
+            fn _emit_attribute_set_base_event(&self, base_album: Option<ALBUMID>) {
+                album_storage::InternalImpl::_emit_attribute_set_base_event(self, base_album)
+            }
+
+            fn _set_token_album(&mut self, token_id: Id, token_album: ALBUMID) -> Result<(), AFT34Error> {
+                album_storage::InternalImpl::_set_token_album(self, token_id, token_album)
+            }
+
+            fn _set_base_album(&mut self, base_album: Option<ALBUMID>) {
+                album_storage::InternalImpl::_set_base_album(self, base_album)
+            }
+
+            fn _burn_from(&mut self, from: AccountId, id: Id) -> Result<(), AFT34Error> {
+                album_storage::InternalImpl::_burn_from(self, from, id)
+            }
+        }
+    ))
+    .expect("Should parse");
+
+    let album_storage_impl = syn::parse2::<syn::ItemImpl>(quote!(
+        impl AFT34ALBUMStorageImpl for #storage_struct_name {}
+    ))
+    .expect("Should parse");
+
+    let mut album_storage = syn::parse2::<syn::ItemImpl>(quote!(
+        impl AFT34ALBUMStorage for #storage_struct_name {
+            #[ink(message)]
+            fn base_album(&self) -> Option<ALBUMID> {
+                AFT34ALBUMStorageImpl::base_album(self)
+            }
+            #[ink(message)]
+            fn token_album(&self, token_id: Id) -> Result<Option<ALBUMID>, AFT34Error> {
+                AFT34ALBUMStorageImpl::token_album(self, token_id)
+            }
+        }
+    ))
+    .expect("Should parse");
+
+    let import = syn::parse2::<syn::ItemUse>(quote!(
+        use allfeat_contracts::aft34::extensions::album_storage::*;
+    ))
+    .expect("Should parse");
+    impl_args.imports.insert("AFT34ALBUMStorage", import);
+    impl_args.vec_import();
+
+    override_functions("aft34::Internal", &mut internal, impl_args.map);
+    override_functions("AFT34ALBUMStorage", &mut album_storage, impl_args.map);
+    override_functions("AFT34Burnable", &mut internal, impl_args.map);
+
+    impl_args.items.push(syn::Item::Impl(internal_impl));
+    impl_args.items.push(syn::Item::Impl(internal));
+    impl_args.items.push(syn::Item::Impl(album_storage_impl));
+    impl_args.items.push(syn::Item::Impl(album_storage));
+}
+
+
+
 pub(crate) fn impl_aft37(impl_args: &mut ImplArgs) {
     let storage_struct_name = impl_args.contract_name();
     let internal_impl = syn::parse2::<syn::ItemImpl>(quote!(

@@ -1,0 +1,1 @@
+"#[doc =\n\" Provides tracking nonces for addresses. Nonces will only increment.\"] pub\ntrait Nonces\n{\n    #[doc = \" Returns the nonce of `account`.\"] #[ink(message)]\n    #[ink(selector = 452225060u32)] fn nonces(& self, account : AccountId) ->\n    u64 ;\n}"

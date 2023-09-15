@@ -30,6 +30,7 @@ pub mod extensions {
     pub mod metadata;
     pub mod mintable;
     pub mod uri_storage;
+    pub mod album_storage;
 }
 
 pub type Owner = AccountId;

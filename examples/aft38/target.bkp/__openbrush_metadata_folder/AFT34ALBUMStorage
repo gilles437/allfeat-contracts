@@ -1,0 +1,1 @@
+"pub trait AFT34ALBUMStorage\n{\n    #[ink(message)] #[ink(selector = 4102369024u32)] fn base_album(& self) ->\n    Option < ALBUMID > ; #[ink(message)] #[ink(selector = 2288520563u32)] fn\n    token_album(& self, token_id : Id) -> Result < Option < ALBUMID >,\n    AFT34Error > ;\n}"

@@ -1,0 +1,1 @@
+"pub trait PSP61\n{\n    #[ink(message)] #[ink(selector = 219093767u32)] fn\n    supports_interface(& self, interface_id : u32) -> bool ; #[ink(message)]\n    #[ink(selector = 3926716602u32)] fn supported_interfaces(& self) -> Vec <\n    u32 > ;\n}"

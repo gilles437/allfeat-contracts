@@ -1,0 +1,9 @@
+/Users/gilles/allfeat-contracts/allfeat-contracts/examples/aft38/target/ink/release/deps/pallet_assets_chain_extension-6c9363ff3ce416c7.rmeta: /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/lib.rs /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/traits.rs /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/ink.rs
+
+/Users/gilles/allfeat-contracts/allfeat-contracts/examples/aft38/target/ink/release/deps/libpallet_assets_chain_extension-6c9363ff3ce416c7.rlib: /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/lib.rs /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/traits.rs /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/ink.rs
+
+/Users/gilles/allfeat-contracts/allfeat-contracts/examples/aft38/target/ink/release/deps/pallet_assets_chain_extension-6c9363ff3ce416c7.d: /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/lib.rs /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/traits.rs /Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/ink.rs
+
+/Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/lib.rs:
+/Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/traits.rs:
+/Users/gilles/.cargo/git/checkouts/pallet-assets-chain-extension-43f98eae7d75ec5e/f8ea374/src/ink.rs:

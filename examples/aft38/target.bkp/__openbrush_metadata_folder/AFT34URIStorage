@@ -1,0 +1,1 @@
+"pub trait AFT34URIStorage\n{\n    #[ink(message)] #[ink(selector = 50961521u32)] fn base_uri(& self) ->\n    Option < URI > ; #[ink(message)] #[ink(selector = 3603818526u32)] fn\n    token_uri(& self, token_id : Id) -> Result < Option < URI >, AFT34Error >\n    ;\n}"

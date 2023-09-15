@@ -1,0 +1,1 @@
+"pub trait AFT34Mintable\n{\n    #[doc = \" Mints a new token with `id`.\"] #[doc = \"\"]\n    #[doc = \" See [`AFT34::_mint_to`].\"] #[ink(message)]\n    #[ink(selector = 1673970652u32)] fn\n    mint(& mut self, account : AccountId, id : Id) -> Result < (), AFT34Error\n    > ;\n}"
